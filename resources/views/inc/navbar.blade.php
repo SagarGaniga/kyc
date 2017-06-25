@@ -63,6 +63,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign In</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

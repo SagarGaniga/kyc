@@ -11,4 +11,5 @@
 |
 */
 
+
 Route::get('/', 'PagesController@index');
