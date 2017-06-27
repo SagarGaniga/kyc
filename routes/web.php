@@ -21,6 +21,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/download', function(){
+	Excel::create('sagar', function($excel){
+		$excel->sheet('sheetname', function($sheet){
+			$disc = \App\Discussion::all();
+			$sheet-> fromModel($disc);
+
+		});
+	})->download('xls');
+});
 
 
 
