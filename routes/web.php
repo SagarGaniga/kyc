@@ -16,6 +16,11 @@ Route::get('/', 'PagesController@index');
 Route::get('/college', 'PagesController@college');
 
 Route::get('/collegeFinder', 'PagesController@collegeFinder');
+Route::post('/search', 'SyllabusController@search');
+Route::post('/load', 'SyllabusController@load');
+
+Route::resource('syllabus', 'SyllabusController');
+
 
 Auth::routes();
 
